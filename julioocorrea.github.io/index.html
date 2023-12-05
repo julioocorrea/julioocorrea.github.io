@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Júlio Correa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="secao introducao">
+    <div class="ImgPerfil">
+      <img src="Imagens/Perfil.png" alt="">
+    </div>
+    <p class="textoDigitado"></p>
+  </div>
+
+  <div class="secao educacao">
+      <div class="conteudoEducacao">
+          <h1>Educação</h1>
+          <h2>UNIVAS</h2>
+          <h3>Bacharelado em Sistemas de Informação</h3>
+          <h2>2022 - 2025</h2>
+      </div>
+      <img class="ImagemEducacao" src="Imagens/Educacao.png" alt="">
+  </div>
+
+  <div class="secao experiencia">
+    <div class="experiencias">
+      <h1>Experiência Profissional</h1>
+
+      <div class="exp1">
+        <h2>Estagiário de desenvolvimento de soluções CRM - Dynamics 365 e Power Platform</h2>
+        <h3>Smart Consulting</h3>
+        <h2>03/2023 - 11/2023</h2>
+      </div>
+
+      <div class="exp2">
+        <h2>Desenvolvedor full stack de soluções CRM</h2>
+        <h3>Smart Consulting</h3>
+        <h2>12/2023 - até o momento</h2>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="secao habilidades">
+    <div class="conteudoHabilidades">
+      <h1>Habilidades</h1>
+      <ul>
+        <li>C#</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Microsoft Dynamics 365</li>
+        <li>Microsoft Power Platform</li>
+        <li>Microsoft Power Apps</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="secao projetos">
+    <div class="Projetos">
+      <h1>Projetos</h1>
+
+      <div class="Proj1">
+        <h2>Calculadora de MacroNutrientes</h2>
+        <a href="https://github.com/julioocorrea/Calculadora-De-Macronutrientes.git">Clique para acessar</a>
+      </div>
+
+      <div class="Proj2">
+        <h2>RPG Game</h2>
+        <a href="https://github.com/julioocorrea/RPGGame.git">Clique para acessar</a>
+      </div>
+
+      <div class="Proj3">
+        <h2>Estatistica do Brasileirão</h2>
+        <a href="https://github.com/julioocorrea/EstatisticaBrasileirao.git">Clique para acessar</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <a class="linkedin" href="https://www.linkedin.com/in/j%C3%BAlio-correa-55354020b/" target="_blank">
+      <img src="Imagens/linkedin.png" alt="LinkedIn">
+    </a>
+
+    <img class="email" src="Imagens/Email.png" alt="" onclick="openEmailModal()">
+  </footer>
+
+  
+  <!-- Modal para o email -->
+  <div id="modalEmail" class="modal">
+    <div class="modal-content container"> <!-- Adicionado a classe 'container' ao modal -->
+        <span class="close" onclick="closeEmailModal()">&times;</span>
+        <h2>Formulário de Contato</h2>
+        <form>
+            <label for="name">Nome: </label>
+            <input type="text" name="name" id="name"></input>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email"></input>
+
+            <label for="message">Mensagem: </label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+            <button onclick="submitForm()" type="button">Enviar</button>
+        </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
